@@ -11,15 +11,20 @@ RSpec.describe ProblemsController, type: :controller do
     expect(response.status).to eq(200)
   end
 
-  it "Get new" do
+  it "Get new returns 200" do
     get :new
     expect(response.status).to eq(200)
   end
+
+  it 'Post create returns 200' do
+    post :create
+    expect(response.status).to eq(200)
+  end
+
 
   #create
   #edit
   #update
   #show
-  #new
   #destroy
 end

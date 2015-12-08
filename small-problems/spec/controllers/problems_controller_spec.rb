@@ -6,9 +6,9 @@ RSpec.describe ProblemsController, type: :controller do
 # was the user successfully authenticated?
 # was the correct object stored in the response template?
 # was the appropriate message displayed to the user in the view?
-  it "should get index" do
+  it "returns 200" do
     get :index
-    expect(response).to have_http_status(:success)
+    expect(response.status).to eq(200)
   end
 
   #create
